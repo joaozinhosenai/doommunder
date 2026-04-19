@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMISETA VAZIA - StreetWar</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    @font-face {
+      font-family: "Satan";
+      src: url("fonts/Satan.ttf") format("truetype");
+    }
+
+    * { font-family: "Satan", sans-serif !important; }
+
+    .opcoes {
+      margin-top: 20px;
+      color: #fff;
+    }
+    .opcoes label { color: #ff0000; font-size: 18px; margin-bottom: 6px; display: block; }
+    select {
+      width: 180px;
+      padding: 10px;
+      background: #111;
+      color: white;
+      border: 2px solid #ff0000;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    select:hover { border-color: #b30000; }
+  </style>
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="logo">BLICK</div>
+  <nav class="main-nav">
+    <a href="index.html">VOLTAR À LOJA</a>
+  </nav>
+</header>
+
+<section class="produto-detalhe">
+
+  <img src="yeye.webp" alt="CAMISETA VAZIA" class="produto-imagem">
+
+  <div class="produto-info">
+    <h1>CAMISETA VAZIA</h1>
+    <p class="preco"><span class="preco-atual">R$ 159,00</span></p>
+
+    <p class="descricao">
+      Camiseta premium em algodão 100% penteado. Modelagem oversized e toque macio.
+      Perfeita para compor qualquer visual street moderno.
+    </p>
+
+    <!-- TAMANHOS -->
+    <div class="opcoes">
+      <label for="tamanho">Tamanho:</label>
+      <select id="tamanho">
+        <option>P</option><option>M</option><option>G</option><option>GG</option>
+      </select>
+    </div>
+
+    <!-- CORES -->
+    <div class="opcoes">
+      <label for="cor">Cor:</label>
+      <select id="cor">
+        <option>Vermelho</option><option>Azul</option><option>Roxo</option>
+      </select>
+    </div>
+
+    <button class="btn-comprar">ADICIONAR AO CARRINHO</button>
+  </div>
+
+</section>
+
+</body>
+</html>
